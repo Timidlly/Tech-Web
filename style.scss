@@ -1,321 +1,222 @@
-// Styling Here
-// Fonts
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
-
-// Colors
-$primary : #000;
-$secondary : #fff;
-$tertiary: #03021A99;
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-//Styling navbar
-header {
-    nav {
-        position: fixed;
-
-        .upper {
-            width: 100vw;
-            height: 40px !important;
-            background-size: cover !important;
-            background-image: url(images/background.png);
-            background-repeat: no-repeat;
-            background-position: center;
-
-            .left-content {
-                a {
-                    text-decoration: none;
-                    color: $secondary;
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    letter-spacing: 1px;
-                    margin-left: 250px;
-                    padding-top: 13px;
-                    position: absolute;
-                }
-            }
-
-            .right {
-                float: right;
-
-                ul {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 70px;
-
-                    li {
-                        a {
-                            text-decoration: none;
-                            color: $secondary;
-                            font-family: 'Inter', sans-serif;
-                            margin-left: -100px;
-                            font-weight: 400;
-                            padding-top: 10px;
-                            position: absolute;
-                        }
-                    }
-                }
-            }
-        }
-
-        .lower {
-            width: 100vw;
-            height: 60px !important;
-            background-color: $secondary;
-            position: fixed;
-            border: 0.5px solid grey;
-
-            img {
-                height: 5vh;
-                margin-left: 230px;
-                margin-top: 12px;
-            }
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                gap: 35px;
-                text-align: center;
-                justify-content: center;
-                margin-top: -30px;
-
-                li {
-                    :hover {
-                        opacity: 0.5;
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color: $primary;
-                        font-family: 'Inter', sans-serif;
-                        font-size: 14px;
-                        font-weight: 700;
-
-                    }
-                }
-
-                .search {
-                    margin-right: -5px;
-                    margin-top: -4px;
-
-                    input[type=text] {
-                        position: absolute;
-                        background-color: rgb(237, 237, 237);
-                        float: right;
-                        padding: 8px;
-                        border: none;
-                        margin-top: -5px;
-                        margin-right: 16px;
-                        font-size: 15px;
-                    }
-
-                    button {
-                        position: absolute;
-                        margin-left: 160px;
-                        float: right;
-                        padding: 5px 8px;
-                        margin-top: -3px;
-                        font-size: 15px;
-                        border: none;
-                        cursor: pointer;
-
-                        :hover {
-                            opacity: 0.5;
-                        }
-                    }
-                }
-            }
-
-            #right {
-                margin-top: -33px;
-                margin-right: 200px;
-
-                button {
-                    float: right;
-                    overflow: hidden;
-                    padding: 10px;
-                    border-radius: 8%;
-                    justify-content: center;
-                    background-color: $primary;
-                    color: $secondary;
-                    font-size: 14px;
-                    font-family: 'Inter', 'sans-serif';
-                    cursor: pointer;
-
-                }
-            }
-        }
-
-        .category {
-            width: 100vw;
-            height: 100px !important;
-            background-color: $secondary;
-            border: 0.5px solid grey;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                margin-top: 70px;
-                gap: 50px;
-                text-align: center;
-                justify-content: center;
-
-                li {
-                    :hover {
-                        opacity: 0.5;
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color: $primary;
-                        font-family: 'Inter', sans-serif;
-                        font-size: 13px;
-                        font-weight: 500;
-
-                    }
-                }
-            }
-        }
-    }
+header nav {
+  position: fixed;
+}
+header nav .upper {
+  width: 100vw;
+  height: 40px !important;
+  background-size: cover !important;
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header nav .upper .left-content a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-left: 250px;
+  padding-top: 13px;
+  position: absolute;
+}
+header nav .upper .right {
+  float: right;
+}
+header nav .upper .right ul {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+header nav .upper .right ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  margin-left: -100px;
+  font-weight: 400;
+  padding-top: 10px;
+  position: absolute;
+}
+header nav .lower {
+  width: 100vw;
+  height: 60px !important;
+  background-color: #fff;
+  position: fixed;
+  border: 0.5px solid grey;
+}
+header nav .lower img {
+  height: 5vh;
+  margin-left: -180px; /* Edited by radhika */
+  margin-top: 12px;
+}
+header nav .lower ul {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  text-align: center;
+  justify-content: center;
+  margin-top: -30px;
+}
+header nav .lower ul li :hover {
+  opacity: 0.5;
+}
+header nav .lower ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+header nav .lower ul .search {
+  margin-left: 100px; /* changes by radhika here */
+  margin-top: -4px;
 }
 
+header nav .lower ul .search input[type=text] {
+  position: absolute;
+  background-color: rgb(237, 237, 237);
+  float: right;
+  padding: 8px;
+  border: none;
+  margin-top: -4px;
+  margin-right: 16px;
+  font-size: 15px;
+}
+header nav .lower ul .search button {
+  position: absolute;
+  margin-left: 160px;
+  float: right;
+  padding: 5px 8px;
+  margin-top: -4px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+header nav .lower ul .search button :hover {
+  opacity: 0.5;
+}
+header nav .lower #right {
+  margin-top: -33px;
+  margin-right: 200px;
+}
+header nav .lower #right button {
+  float: right;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 8%;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Inter", "sans-serif";
+  cursor: pointer;
+}
+header nav .category {
+  width: 100vw;
+  height: 100px !important;
+  background-color: #fff;
+  border: 0.5px solid grey;
+}
+header nav .category ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+}
+header nav .category ul li :hover {
+  opacity: 0.5;
+}
+header nav .category ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
 
-// Responsiveness Styling
-// devices upto 600px
 @media only screen and (min-width: 600px) {
-
-    //Styling navbar
-    header {
-        nav {
-            position: fixed;
-            
-            .lower {
-                width: 100vw;
-                height: 60px !important;
-                background-color: $secondary;
-                position: fixed;
-
-                img {
-                    height: 4vh;
-                    margin-left: 10px;
-                    margin-top: 20px;
-                }
-
-                .material-symbols-outlined{
-                width: 10vw;
-                margin-left: 5px;
-                }
-                .search{
-                 margin-left: 170px;
-                }
-                .bag{
-                    margin-left: 10px;
-
-                }
-                .user{
-                    margin-left: 10px;
-
-                }  
-                }
-
-               
-            }
-
-           
-        }
-
+  header nav {
+    position: fixed;
+  }
+  header nav .lower {
+    width: 100vw;
+    height: 60px !important;
+    background-color: #fff;
+    position: fixed;
+  }
+  header nav .lower img {
+    height: 4vh;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  header nav .lower .material-symbols-outlined {
+    width: 10vw;
+    margin-left: 5px;
+  }
+  header nav .lower .search {
+    margin-left: 170px;
+  }
+  header nav .lower .bag {
+    margin-left: 10px;
+  }
+  header nav .lower .user {
+    margin-left: 10px;
+  }
 }
-
-// devices between 450px to 600px
-@media only screen and (min-width: 450px) and(max-width:600px) {
-
-    //Styling navbar
-    header {
-        nav {
-            position: fixed;
-            
-            .lower {
-                width: 100vw;
-                height: 60px !important;
-                background-color: $secondary;
-                position: fixed;
-
-                img {
-                    height: 4vh;
-                    margin-left: 10px;
-                    margin-top: 20px;
-                }
-
-                .material-symbols-outlined{
-                width: 10vw;
-                margin-left: 5px;
-                }
-                .search{
-                 margin-left: 50px;
-                }
-                .bag{
-                    margin-left: 10px;
-
-                }
-                .user{
-                    margin-left: 10px;
-
-                }  
-                }
-
-               
-            }
-
-           
-        }
-
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+  header nav {
+    position: fixed;
+  }
+  header nav .lower {
+    width: 100vw;
+    height: 60px !important;
+    background-color: #fff;
+    position: fixed;
+  }
+  header nav .lower img {
+    height: 4vh;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  header nav .lower .material-symbols-outlined {
+    width: 10vw;
+    margin-left: 5px;
+  }
+  header nav .lower .search {
+    margin-left: 50px;
+  }
+  header nav .lower .bag {
+    margin-left: 10px;
+  }
+  header nav .lower .user {
+    margin-left: 10px;
+  }
 }
-
-// devices till 450px
 @media only screen and (max-width: 450px) {
-
-    //Styling navbar
-    header {
-        nav {
-            position: fixed;
-            
-            .lower {
-                width: 100vw;
-                height: 60px !important;
-                background-color: $secondary;
-                position: fixed;
-
-                img {
-                    height: 3vh;
-                    margin-left: 10px;
-                    margin-top: 20px;
-                }
-
-                .material-symbols-outlined{
-                width: 10vw;
-                margin-left: 5px;
-                }
-                // .search{
-                //  margin-left: 50px;
-                // }
-                // .bag{
-                //     margin-left: 10px;
-
-                // }
-                // .user{
-                //     margin-left: 10px;
-
-                // }  
-                }
-
-               
-            }
-
-           
-        }
-    }
-
+  header nav {
+    position: fixed;
+  }
+  header nav .lower {
+    width: 100vw;
+    height: 60px !important;
+    background-color: #fff;
+    position: fixed;
+  }
+  header nav .lower img {
+    height: 3vh;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  header nav .lower .material-symbols-outlined {
+    width: 10vw;
+    margin-left: 5px;
+  }
+}/*# sourceMappingURL=style.css.map */
