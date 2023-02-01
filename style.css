@@ -52,7 +52,7 @@ header nav .lower {
 }
 header nav .lower img {
   height: 5vh;
-  margin-left: 230px;
+  margin-left: -180px; /* Edited by radhika */
   margin-top: 12px;
 }
 header nav .lower ul {
@@ -74,16 +74,17 @@ header nav .lower ul li a {
   font-weight: 700;
 }
 header nav .lower ul .search {
-  margin-right: -5px;
+  margin-left: 100px; /* changes by radhika here */
   margin-top: -4px;
 }
+
 header nav .lower ul .search input[type=text] {
   position: absolute;
   background-color: rgb(237, 237, 237);
   float: right;
   padding: 8px;
   border: none;
-  margin-top: -5px;
+  margin-top: -4px;
   margin-right: 16px;
   font-size: 15px;
 }
@@ -92,7 +93,7 @@ header nav .lower ul .search button {
   margin-left: 160px;
   float: right;
   padding: 5px 8px;
-  margin-top: -3px;
+  margin-top: -4px;
   font-size: 15px;
   border: none;
   cursor: pointer;
